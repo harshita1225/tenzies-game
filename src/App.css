@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.mainContainer {
+  margin-top: 5rem;
+  width: 50rem;
+  height: 50rem;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 40rem;
+  height: 40rem;
+  background-color: rgb(195, 215, 231);
+  border: 1px solid black;
+  border-radius: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  text-align: center;
+  margin: 2rem;
+  padding: 1rem;
+  color: rgb(116, 68, 192);
+  letter-spacing: 1rem;
+}
+h5 {
+  text-align: center;
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+.dice-container {
+  padding: 3rem;
+  display: grid;
+  grid-template: auto auto / repeat(5, 5rem);
+  gap: 2rem;
+}
+.die-face {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(102, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  margin: 5rem;
+  padding: 1rem;
+  background-color: rgb(66, 66, 138);
+  border: none;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  cursor: pointer;
+  position: relative;
+  left: 12rem;
+  bottom: 3rem;
+  box-shadow: inset 5px 5px 10px -3px rgba(238, 230, 230, 0.7);
+}
+
+.rollCount {
+  text-align: center;
+  font-size: 1rem;
+  color: purple;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset -5px -5px 10px -3px rgba(170, 168, 168, 0.7);
 }
